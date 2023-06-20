@@ -7,7 +7,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: ComponentVersion
-    name: podinfo
+    name: sidhipodinfo
     resourceRef:
       name: deploy
       version: latest
