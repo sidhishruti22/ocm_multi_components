@@ -8,6 +8,3 @@ spec:
   sourceRef:
     kind: ComponentVersion
     name: sidhipodinfo
-    resourceRef:
-      name: deployment
-      version: latest
