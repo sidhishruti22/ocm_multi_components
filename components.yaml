@@ -3,7 +3,7 @@ components:
 - name: github.com/sidhishruti22/multipodinfo
   version: v1.0.0
   provider:
-    name: open-component-model
+    name: sidhishruti22
   componentReferences:
   - name: backend
     componentName: github.com/sidhishruti22/multipodinfo/backend
