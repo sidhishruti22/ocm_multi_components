@@ -10,4 +10,4 @@ spec:
     name: podinfo
     resourceRef:
       name: deployment
-      version: latest
+      version: 1.0.0
