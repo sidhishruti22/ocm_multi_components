@@ -9,5 +9,5 @@ spec:
     kind: ComponentVersion
     name: sidhipodinfo
     resourceRef:
-      name: deploy
+      name: deployment
       version: latest
