@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: Resource
 metadata:
-  name: sidhi-podinfo-deployment
+  name: sidhii-podinfo-deployment
   namespace: ocm-system
 spec:
   interval: 1m0s
@@ -9,5 +9,5 @@ spec:
     kind: ComponentVersion
     name: podinfo
     resourceRef:
-      name: deployment
+      name: deploy
       version: latest
