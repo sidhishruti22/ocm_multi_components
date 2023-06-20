@@ -1,0 +1,116 @@
+components:
+# -- product component
+- name: github.com/sidhishruti22/multipodinfo
+  version: 1.0.0
+  provider:
+    name: open-component-model
+  componentReferences:
+  - name: backend
+    componentName: github.com/sidhishruti22/multipodinfo/backend
+    version: 1.0.0
+  - name: frontend
+    componentName: github.com/sidhishruti22/multipodinfo/frontend
+    version: 1.0.8
+  - name: redis
+    componentName: github.com/sidhishruti22/multipodinfo/redis
+    version: 1.0.0
+# -- backend component
+- name: github.com/sidhishruti22/multipodinfo/backend
+  version: 1.0.0
+  provider:
+    name: sidhishruti22
+  resources:
+  - name: config
+    type: configdata.ocm.software
+    input:
+      type: file
+      mediaType: application/yaml
+      path: ./app/backend/config.yaml
+      compress: true
+  - name: instructions
+    type: PlainText
+    input:
+      type: file
+      mediaType: text/markdown
+      path: ./app/backend/README.md
+      compress: true
+  - name: image
+    relation: external
+    type: ociImage
+    version: 6.2.0
+    access:
+      type: ociArtifact
+      imageReference: ghcr.io/stefanprodan/podinfo:6.2.0
+  - name: manifests
+    type: kustomize.ocm.fluxcd.io
+    input:
+      type: dir
+      path: ./app/backend/manifests
+      compress: true
+# -- frontend component
+- name: github.com/sidhishruti22/multipodinfo/frontend
+  version: 1.0.8
+  provider:
+    name: sidhishruti22
+  resources:
+  - name: config
+    type: configdata.ocm.software
+    input:
+      type: file
+      mediaType: application/yaml
+      path: ./app/frontend/config.yaml
+      compress: true
+  - name: instructions
+    type: PlainText
+    version: 1.0.7
+    input:
+      type: file
+      mediaType: text/markdown
+      path: ./app/frontend/README.md
+      compress: true
+  - name: image
+    relation: external
+    type: ociImage
+    version: 6.2.0
+    access:
+      type: ociArtifact
+      imageReference: ghcr.io/stefanprodan/podinfo:6.2.0
+  - name: manifests
+    type: kustomize.ocm.fluxcd.io
+    input:
+      type: dir
+      path: ./app/frontend/manifests
+      compress: true
+# -- redis component
+- name: github.com/sidhishruti22/multipodinfo/redis
+  version: 1.0.0
+  provider:
+    name: sidhishruti22
+  resources:
+  - name: config
+    type: configdata.ocm.software
+    input:
+      type: file
+      mediaType: application/yaml
+      path: ./redis/config.yaml
+      compress: true
+  - name: instructions
+    type: PlainText
+    input:
+      type: file
+      mediaType: text/markdown
+      path: ./redis/README.md
+      compress: true
+  - name: image
+    relation: external
+    type: ociImage
+    version: 6.0.1
+    access:
+      type: ociArtifact
+      imageReference: redis:6.0.1
+  - name: manifests
+    type: kustomize.ocm.fluxcd.io
+    input:
+      type: dir
+      path: ./redis/manifests
+      compress: true
