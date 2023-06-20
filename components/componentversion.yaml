@@ -7,7 +7,7 @@ spec:
   interval: 10m0s
   component: github.com/sidhishruti22/multipodinfo
   version:
-    semver: 1.0.0
+    semver: v1.0.0
   repository:
     url: ghcr.io/sidhishruti22
     secretRef:

@@ -1,7 +1,7 @@
 components:
 # -- product component
 - name: github.com/sidhishruti22/multipodinfo
-  version: 1.0.0
+  version: v1.0.0
   provider:
     name: open-component-model
   componentReferences:
