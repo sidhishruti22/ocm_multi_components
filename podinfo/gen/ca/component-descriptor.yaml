@@ -8,12 +8,12 @@ metadata:
 repositoryContexts: []
 spec:
   references:
-  - componentName: github.com/weaveworks/backend
+  - componentName: github.com/sidhishruti22/backend
     name: backend
     version: v1.1.2
-  - componentName: github.com/weaveworks/frontend
+  - componentName: github.com/sidhishruti22/frontend
     name: frontend
     version: v1.1.2
-  - componentName: github.com/weaveworks/cache
+  - componentName: github.com/sidhishruti22/cache
     name: cache
     version: v1.1.2
