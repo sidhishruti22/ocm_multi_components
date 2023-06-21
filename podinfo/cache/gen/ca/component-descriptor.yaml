@@ -1,0 +1,33 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/cache
+  provider:
+    name: sidhishruti22
+  version: v1.1.2
+repositoryContexts: []
+spec:
+  resources:
+  - access:
+      localReference: sha256.912abf54c58bfd90707d8b81d3ae74475a6f2469c269944eff31f9c7454d8ea8
+      mediaType: application/yaml
+      type: localBlob
+    name: config
+    relation: local
+    type: configdata.ocm.software
+    version: v1.1.2
+  - access:
+      imageReference: redis:6.0.1
+      type: ociArtifact
+    name: image
+    relation: external
+    type: ociImage
+    version: 6.2.0
+  - access:
+      localReference: sha256.668adeccbc669d33d03ce25f5d2d6880036955a0529c07de2052aad115726c4d
+      mediaType: application/x-tar
+      type: localBlob
+    name: manifests
+    relation: local
+    type: kustomize.ocm.fluxcd.io
+    version: v1.1.2
