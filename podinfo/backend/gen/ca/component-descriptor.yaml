@@ -4,7 +4,7 @@ metadata:
   name: github.com/sidhishruti22/backend
   provider:
     name: sidhishruti22
-  version: v1.1.3
+  version: v1.1.4
 repositoryContexts: []
 spec:
   resources:
@@ -15,7 +15,7 @@ spec:
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.1.3
+    version: v1.1.4
   - access:
       imageReference: ghcr.io/stefanprodan/podinfo:6.2.0
       type: ociArtifact
@@ -24,10 +24,10 @@ spec:
     type: ociImage
     version: 6.2.0
   - access:
-      localReference: sha256.0dd1a1417c8416f977f66af9a727fbc9c2bf73fd1d0ca5ed619f3669aa04b4a9
+      localReference: sha256.1b51f61607c96d690f5a541212657583812331df61b98686e0a2c8dc61b909c3
       mediaType: application/x-tar
       type: localBlob
     name: manifests
     relation: local
     type: Directory
-    version: v1.1.3
+    version: v1.1.4
