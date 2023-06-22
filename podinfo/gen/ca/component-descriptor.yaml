@@ -4,13 +4,13 @@ metadata:
   name: github.com/sidhishruti22/ocmmultipodinfo
   provider:
     name: sidhishruti22
-  version: v1.1.5
+  version: v1.1.6
 repositoryContexts: []
 spec:
   references:
   - componentName: github.com/sidhishruti22/backend
     name: backend
-    version: v1.1.5
+    version: v1.1.6
   - componentName: github.com/sidhishruti22/frontend
     name: frontend
     version: v1.1.4

@@ -6,7 +6,7 @@ metadata:
     env: test
 configuration:
   defaults:
-    replicas: 2
+    replicas: 3
     message: "Welcome to the backend service"
   schema:
     type: object

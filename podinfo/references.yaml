@@ -1,6 +1,6 @@
 name: backend
 componentName: github.com/sidhishruti22/backend
-version: v1.1.5
+version: v1.1.6
 ---
 name: frontend
 componentName: github.com/sidhishruti22/frontend
