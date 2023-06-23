@@ -6,6 +6,7 @@ metadata:
     env: test
 configuration:
   defaults:
+    replicas: 2
     color: red
     message: Hello, world!
   schema:
@@ -17,6 +18,9 @@ configuration:
       message:
         type: string
   rules:
+  - value: (( replicas ))
+    file: deploy.yaml
+    path: spec.replicas 
   - value: (( message ))
     file: configmap.yaml
     path: data.PODINFO_UI_MESSAGE

@@ -1,11 +1,11 @@
 name: backend
 componentName: github.com/sidhishruti22/backend
-version: v1.1.6
+version: v1.1.7
 ---
 name: frontend
 componentName: github.com/sidhishruti22/frontend
-version: v1.1.4
+version: v1.1.7
 ---
 name: cache
 componentName: github.com/sidhishruti22/cache
-version: v1.1.4
+version: v1.1.7
