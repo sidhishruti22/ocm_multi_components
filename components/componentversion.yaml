@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentVersion
 metadata:
-  name: multiocmpodify11
+  name: multiocmpodify1
   namespace: ocm-system
 spec:
   interval: 2m0s
