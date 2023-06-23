@@ -6,7 +6,7 @@ metadata:
 spec:
   configRef:
     kind: ComponentVersion
-    name: multiocmpodify
+    name: multiocmpodify1
     namespace: ocm-system
     resourceRef:
       name: config
@@ -16,7 +16,7 @@ spec:
   interval: 10m0s
   sourceRef:
     kind: ComponentVersion
-    name: multiocmpodify
+    name: multiocmpodify1
     namespace: ocm-system
     resourceRef:
       name: manifests

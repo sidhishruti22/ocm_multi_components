@@ -6,7 +6,7 @@ metadata:
 spec:
   configRef:
     kind: ComponentVersion
-    name: multiocmpodify
+    name: multiocmpodify11
     namespace: ocm-system
     resourceRef:
       name: config
